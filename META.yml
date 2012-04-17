@@ -22,4 +22,5 @@ requires:
   Mojolicious::Plugin::ParamExpand: 0
 resources:
   bugtracker: http://github.com/sshaw/Mojolicious-Plugin-FormFields/issues
-version: 0.01_01
+  homepage: http://github.com/sshaw/Mojolicious-Plugin-FormFields
+version: 0.01_02

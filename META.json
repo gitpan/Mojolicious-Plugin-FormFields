@@ -41,7 +41,8 @@
    "resources" : {
       "bugtracker" : {
          "web" : "http://github.com/sshaw/Mojolicious-Plugin-FormFields/issues"
-      }
+      },
+      "homepage" : "http://github.com/sshaw/Mojolicious-Plugin-FormFields"
    },
-   "version" : "0.01_01"
+   "version" : "0.01_02"
 }
