@@ -1,26 +1,28 @@
---- #YAML:1.0
-name:               Mojolicious-Plugin-FormFields
-version:            0.03
-abstract:           Use objects and data structures in your forms
+---
+abstract: 'Lightweight form builder with validation and filtering'
 author:
-    - Skye Shaw <skye.shaw AT gmail.com>
-license:            perl
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Skye Shaw <sshaw AT lucas.cis.temple.edu>'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Mojolicious:          4.50
-    Mojolicious::Plugin::ParamExpand:  0
-resources:
-    bugtracker:  http://github.com/sshaw/Mojolicious-Plugin-FormFields/issues
-    homepage:    http://github.com/sshaw/Mojolicious-Plugin-FormFields
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Mojolicious-Plugin-FormFields
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Mojolicious: 2.52
+  Mojolicious::Plugin::ParamExpand: 0
+  Validate::Tiny: 0.98
+resources:
+  bugtracker: http://github.com/sshaw/Mojolicious-Plugin-FormFields/issues
+  homepage: http://github.com/sshaw/Mojolicious-Plugin-FormFields
+  repository: http://github.com/sshaw/Mojolicious-Plugin-FormFields
+version: 0.04

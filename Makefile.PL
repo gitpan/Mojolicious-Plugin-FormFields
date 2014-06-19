@@ -7,13 +7,15 @@ WriteMakefile(
      NAME         => 'Mojolicious::Plugin::FormFields',
      VERSION_FROM => 'lib/Mojolicious/Plugin/FormFields.pm',
      ABSTRACT_FROM => 'lib/Mojolicious/Plugin/FormFields.pm',
-     AUTHOR       => 'Skye Shaw <skye.shaw AT gmail.com>',	      
-     PREREQ_PM    => { 'Mojolicious' => '4.50',
-		       'Mojolicious::Plugin::ParamExpand' => 0 },
+     AUTHOR       => 'Skye Shaw <sshaw AT lucas.cis.temple.edu>',	      
+     PREREQ_PM    => { 'Mojolicious' => '2.52',
+		       'Mojolicious::Plugin::ParamExpand' => 0, 
+		       'Validate::Tiny' => '0.98' },
      LICENSE      => 'perl',
      test         => {TESTS => 't/*.t'},
      (eval { ExtUtils::MakeMaker->VERSION(6.46) } ?
       (META_MERGE  => { resources => { bugtracker => 'http://github.com/sshaw/Mojolicious-Plugin-FormFields/issues',
+                                       repository => 'http://github.com/sshaw/Mojolicious-Plugin-FormFields',
 				       homepage   => 'http://github.com/sshaw/Mojolicious-Plugin-FormFields'} }) : ())
 );
 
